@@ -28,7 +28,10 @@ jobs:
           pip install pyinstaller
 
       - name: Build executable
-        run: /Library/Frameworks/Python.framework/Versions/3.9/bin/pyinstaller -w EpisodeReName.py
+        run: |
+          which pyinstaller
+          # /Library/Frameworks/Python.framework/Versions/3.9/bin/pyinstaller -w EpisodeReName.py
+          pyinstaller -w EpisodeReName.py
 
 
       - name: Create release
