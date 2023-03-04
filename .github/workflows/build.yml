@@ -31,6 +31,10 @@ jobs:
           pip install pyinstaller
           which pyinstaller
 
+      - name: which pyinstaller
+        run: |
+          which pyinstaller
+
       - name: Build executable
         run: |
           # /Library/Frameworks/Python.framework/Versions/3.9/bin/pyinstaller -w EpisodeReName.py
