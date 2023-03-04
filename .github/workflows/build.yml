@@ -23,7 +23,7 @@ jobs:
           pip install pyinstaller
 
       - name: Build executable
-        run: pyinstaller -F -w EpisodeReName.py
+        run: /usr/local/bin/pyinstaller -w EpisodeReName.py
 
       - name: Create release
         id: create_release
